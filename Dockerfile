@@ -4,4 +4,5 @@ MAINTAINER Brian Ennis
 
 RUN apt-get update && apt-get -y upgrade && apt-get install -y git &&\
   git clone https://github.com/czc/nb_distribution.git && \
-  export PATH=$PWD/nb_distribution/:$PATH
+  mv /nb_distribution/* bin/
+
